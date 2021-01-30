@@ -1,0 +1,22 @@
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+
+  #collapsable-nav ul li a{
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+  }
+
+  #collapsable-nav ul li a:hover, #collapsable-nav ul li a:active {
+    background-color: #505050;
+    color: white;
+  }
