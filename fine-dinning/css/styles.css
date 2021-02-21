@@ -13,8 +13,9 @@ body{
     width: 25%;
 }
 
-.navbar-light .navbar-nav li a span{
-    /* margin-left: 10%; */
+#header-nav .navbar-toggler{
+    color: #4A6D34;
+    border: 1px solid #4A6D34;;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
