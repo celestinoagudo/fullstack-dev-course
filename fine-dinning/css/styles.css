@@ -60,6 +60,13 @@ body{
     }
   }
 
+  @media only screen and (max-width: 576px) {
+    div#homeTiles{
+        padding-left: 0;
+        padding-right: 0;
+    }
+  }
+
 #header-nav {
     border-style: solid;
     border-width: 5px 0px 0px 0px;
@@ -113,10 +120,18 @@ a.btn-primary{
     border-color: #4A6D34;
 }
 
-a.btn-primary:hover, a.btn-primary:active{
+a.btn-primary:hover, a.btn-primary:active, a.btn-primary:active:hover {
     background-color: #809971;
     border-color: #4A6D34;
+    box-shadow: 0 0 0 0.25rem rgba(128, 153, 113, 0.5);
 }
+
+a.btn-primary:focus, a.btn-primary.active:focus {
+    color: #fff;
+    background-color: #809971;
+    border-color: #809971;
+    box-shadow: 0 0 0 0.25rem rgba(128, 153, 113, 0.5);
+  }
 
 .row div.card{
     margin-bottom: 20px;
