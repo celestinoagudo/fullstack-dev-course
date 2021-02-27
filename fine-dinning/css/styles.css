@@ -140,6 +140,7 @@ a.btn-primary:focus, a.btn-primary.active:focus {
     margin-right: auto;
 }
 
+/* Test Only */
 @media only screen and (max-width: 576px) {
     div#homeTiles{
         padding-left: 0;
