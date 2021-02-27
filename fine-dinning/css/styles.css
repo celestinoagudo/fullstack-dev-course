@@ -1,7 +1,12 @@
+@font-face {
+    font-family: mainfont;
+    src: url(../resources/font/KeepCalm-Medium.ttf);
+}
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
+    /* font-family: mainfont, Helvetica, sans-serif; */
     box-sizing: border-box;
+    background-color: #4A6D34;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -59,6 +64,7 @@ body{
     border-style: solid;
     border-width: 5px 0px 0px 0px;
     border-color: #4A6D34 ;
+    background-color: #FFFFFF;
 }
 
 #header-nav div.container-fluid{
@@ -72,17 +78,60 @@ body{
     padding-left: 10%;
 }
 
-
 footer.panel-footer{
     height: 40px;
-    background-color: #4A6D34;
-    color: #FFFFFF;
+    background-color: #454545;
+    /* color: #FFFFFF; */
+    color: #fff;
 }
 
 .panel-footer div{
     font-size: 13px;
     padding-top: 10px;
 }
+
+div#homePageCarousel{
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px #25371a;
+    border: 2px solid #25371a;
+    border-radius: 6px;
+}
+
+div#homeTiles{
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.btn-primary{
+    background-color: #4A6D34;
+    border-color: #4A6D34;
+}
+
+a.btn-primary:hover, a.btn-primary:active{
+    background-color: #809971;
+    border-color: #4A6D34;
+}
+
+.row div.card{
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px #25371a;
+    border: 2px solid #25371a;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#homeTiles div.row{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 
 
