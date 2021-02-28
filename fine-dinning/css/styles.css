@@ -1,11 +1,7 @@
-/*  Styles Updated */
-@font-face {
-    font-family: mainfont;
-    src: url(../resources/font/KeepCalm-Medium.ttf);
-}
+/*  Styles */
+
 body{
     font-family: 'Roboto', sans-serif;
-    /* font-family: mainfont, Helvetica, sans-serif; */
     box-sizing: border-box;
     background-color: #4A6D34;
 }
@@ -47,19 +43,6 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
-@media only screen and (max-width: 991px) {
-    .navbar-nav{
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-
-    .navbar-light .navbar-nav li{
-        width: 100%;
-    }
-  }
 
 #header-nav {
     border-style: solid;
@@ -140,7 +123,6 @@ a.btn-primary:focus, a.btn-primary.active:focus {
     margin-right: auto;
 }
 
-/* Test Only */
 @media only screen and (max-width: 576px) {
     div#homeTiles{
         padding-left: 0;
@@ -153,6 +135,20 @@ a.btn-primary:focus, a.btn-primary.active:focus {
         width: 97%;
     }
   }
+
+@media only screen and (max-width: 991px) {
+    .navbar-nav{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .navbar-light .navbar-nav li{
+        width: 100%;
+    }
+  }
+  
 
 
 
