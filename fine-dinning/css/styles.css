@@ -118,6 +118,11 @@ a.btn-primary:focus, a.btn-primary.active:focus {
     margin-right: auto;
 }
 
+.row div.card div.mapouter div.gmap_canvas iframe{
+    width: 100%;
+    height: 250px;
+}
+
 #homeTiles div.row{
     margin-left: auto;
     margin-right: auto;
@@ -146,6 +151,16 @@ a.btn-primary:focus, a.btn-primary.active:focus {
 
     .navbar-light .navbar-nav li{
         width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .row div.card{
+        height: 95%;
+    }
+
+    .row div.card div.mapouter div.gmap_canvas iframe{
+        height: 164px;
     }
   }
   
