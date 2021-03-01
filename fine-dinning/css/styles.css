@@ -132,12 +132,14 @@ a.btn-primary:focus, a.btn-primary.active:focus {
     div#homeTiles{
         padding-left: 0;
         padding-right: 0;
-        width: 100%;
+        width: 97%;
     }
 
     div#homePageCarousel{
-        margin-top: 10px;
-        width: 97%;
+        margin-top: 5px;
+        width: 100%;
+        border-left: 0px;
+        border-right: 0px;
     }
   }
 
