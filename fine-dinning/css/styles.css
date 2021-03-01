@@ -69,11 +69,6 @@ footer.panel-footer{
     color: #fff;
 }
 
-.panel-footer div{
-    font-size: 13px;
-    padding-top: 10px;
-}
-
 div#homePageCarousel{
     margin-top: 20px;
     width: 80%;
@@ -128,6 +123,11 @@ a.btn-primary:focus, a.btn-primary.active:focus {
     margin-right: auto;
 }
 
+.panel-footer div{
+    font-size: 13px;
+    padding-top: 10px;
+}
+
 @media only screen and (max-width: 576px) {
     div#homeTiles{
         padding-left: 0;
@@ -150,6 +150,16 @@ a.btn-primary:focus, a.btn-primary.active:focus {
         border-left: 0px;
         border-right: 0px;
     }
+
+    footer.panel-footer{
+        height: 50px;
+    }
+
+    .panel-footer div p{
+        padding-top: 7px;
+    }
+
+
   }
 
 @media only screen and (max-width: 991px) {
