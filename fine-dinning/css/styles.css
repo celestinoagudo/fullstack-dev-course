@@ -144,12 +144,13 @@ a.btn-primary:focus, a.btn-primary.active:focus {
     }
 
     div#homePageCarousel{
-        margin-top: 6px;
+        margin-top: 0px;
         margin-bottom: 17px;
         width: 100%;
         border-top: 0px;
         border-left: 0px;
         border-right: 0px;
+        box-shadow: 0 0 0;
     }
 
     footer.panel-footer{
