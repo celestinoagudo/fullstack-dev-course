@@ -2,65 +2,73 @@
  * Utility method to collapse the navigation menu when the user clicks 
  * anywhere outside the toggler button 
  */
-var collapseNavigationMenuOnBlur = function(){
+(function (global){
     var myNavBarToggler = document.getElementById('navBarToggler');
     myNavBarToggler.addEventListener('blur', function(event){
         var screenWidth = window.innerWidth;
-        //collapse the navbar when the user clicks outside
         if (screenWidth <= 991) {
             var navigationMenu = document.getElementById('navbarSupportedContent');
             const bsCollapse = new bootstrap.Collapse(navigationMenu);
             bsCollapse.toggle();
         }
     });
-}
+})(window);
 
-/**
- * Utility method to insert an HTML into the main content
- * 
- * @param {*} selector the selector
- * @param {*} html HTML to be inserted
- */
-var insertHTML = function(selector, html){
-    var targetElement = document.querySelector(selector);
-    targetElement.innerHTML = html;
-}
+(function(global){
+    //setup namespace for the project
+    var fineDinning = {};
 
-/**
- * Utility method to show the laoding GIF upon launching the web page
- * 
- * @param {*} selector the selector
- */
-var showLoading = function(selector){
+    /**
+     * Utility method to insert an HTML into the main content
+     * 
+     * @param {*} selector the selector
+     * @param {*} html HTML to be inserted
+     */
+    var insertHTML = function(selector, html){
+        var targetElement = document.querySelector(selector);
+        targetElement.innerHTML = html;
+    }
 
-    var html = "<div class='text-center'>";
-    html += "<img src='../fine-dinning/resources/gifs/loading.gif'>";
-    html += "</div>";
+    /**
+     * Utility method to show the laoding GIF upon launching the web page
+     * 
+     * @param {*} selector the selector
+     */
+    var showLoading = function(selector){
 
-    insertHTML(selector,html);
-}
+        var html = "<div class='text-center'>";
+        html += "<img src='../fine-dinning/resources/gifs/loading.gif'>";
+        html += "</div>";
 
-/**
- * Utility method to insert the carousel and cards into the main content
- */
-var loadHomePage = function(){
-    var homeHTMLSnippet = "../fine-dinning/snippets/home-snippet.html";
-    $ajaxUtils.sendGetRequest(homeHTMLSnippet, 
-        function(responseText){
-            document.querySelector("#main-content").innerHTML = responseText;
-        },
-        false
-    );
-}
+        insertHTML(selector,html);
+    }
 
-/**
- * Call the necessary methods on page load (before images or CSS) 
- */
-document.addEventListener("DOMContentLoaded", function(){
-    collapseNavigationMenuOnBlur();
-    showLoading("#main-content");
-    loadHomePage();
-});
+    /**
+     * Utility method to insert the carousel and cards into the main content
+     */
+    var loadHomePage = function(){
+        var homeHTMLSnippet = "../fine-dinning/snippets/home-snippet.html";
+        $ajaxUtils.sendGetRequest(homeHTMLSnippet, 
+            function(responseText){
+                document.querySelector("#main-content").innerHTML = responseText;
+            },
+            false
+        );
+    }
+
+    /**
+     * Call the necessary methods on page load (before images or CSS) 
+     */
+    document.addEventListener("DOMContentLoaded", function(){
+        // collapseNavigationMenuOnBlur();
+        showLoading("#main-content");
+        loadHomePage();
+    });
+  // Expose utility to the global object
+  global.$fineDinning = fineDinning;
+
+
+})(window);
 
 
 
