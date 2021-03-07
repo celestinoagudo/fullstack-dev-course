@@ -3,6 +3,7 @@ body{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     background-color: #4A6D34;
+    height: 100%;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -61,12 +62,13 @@ body{
     padding-left: 10%;
 }
 
-footer.panel-footer{
+footer.panel-footer {
+    width: 100%;
+    bottom: 0px;
     height: 40px;
     background-color: #454545;
     color: #fff;
-    bottom: 0;
-    width: 100%;
+    bottom: 0px;
 }
 
 div#homePageCarousel{
@@ -213,7 +215,7 @@ div#about-content svg{
     }
 
     div#about-content{
-        width: 90%;
+        width: 92%;
     }
   }
 
