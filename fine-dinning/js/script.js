@@ -102,6 +102,35 @@
     };
 
     /**
+     * Utility method to load the menu contents into the main content
+     */
+    fineDinning.loadMenuPage = function(){
+        var homePageIndicator = document.getElementById('at-home');
+        homePageIndicator.classList.remove('active');
+        
+        var newsPageIndicator = document.getElementById('at-news');
+        newsPageIndicator.classList.remove('active');
+
+        var contactPageIndicator = document.getElementById('at-contacts');
+        contactPageIndicator.classList.remove('active');
+
+        var aboutPageIndicator = document.getElementById('at-about');
+        aboutPageIndicator.classList.remove('active');
+
+        var menuPageIndicator = document.getElementById('at-menu');
+        menuPageIndicator.classList.add('active');
+
+        var menuHTMLSnippet = "../fine-dinning/snippets/menu-snippet.html";
+        $ajaxUtils.sendGetRequest(menuHTMLSnippet, 
+            function(responseText){
+                document.querySelector("#main-content").innerHTML = responseText;
+            },
+            false
+        );
+
+    }
+
+    /**
      * Call the necessary methods on page load (before images or CSS) 
      */
     document.addEventListener("DOMContentLoaded", function(){
