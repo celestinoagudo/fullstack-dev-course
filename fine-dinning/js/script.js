@@ -8,7 +8,7 @@
 
         var screenWidth = window.innerWidth;
         if (screenWidth <= 991) {
-            
+
             var navigationMenu = document.getElementById('navbarSupportedContent');
             const bsCollapse = new bootstrap.Collapse(navigationMenu);
             bsCollapse.toggle();
@@ -19,6 +19,15 @@
 (function(global){
     //setup namespace for the project
     var fineDinning = {};
+
+    /**
+     * Call the necessary methods on page load (before images or CSS) 
+     */
+    document.addEventListener("DOMContentLoaded", function(){
+         // collapseNavigationMenuOnBlur();
+        showLoading("#main-content");
+        fineDinning.loadHomePage();
+    });
 
     /**
      * Utility method to insert an HTML into the main content
@@ -167,15 +176,6 @@
 
         insertHTML(selector, foodContents);
     }
-
-    /**
-     * Call the necessary methods on page load (before images or CSS) 
-     */
-    document.addEventListener("DOMContentLoaded", function(){
-        // collapseNavigationMenuOnBlur();
-        showLoading("#main-content");
-        fineDinning.loadHomePage();
-    });
 
   // Expose utility to the global object
   global.$fineDinning = fineDinning;
