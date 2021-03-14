@@ -20,7 +20,7 @@
     //setup namespace for the project
     var fineDinning = {};
 
-    /**
+        /**
      * Call the necessary methods on page load (before images or CSS) 
      */
     document.addEventListener("DOMContentLoaded", function(){
@@ -58,7 +58,7 @@
      * Utility method to insert the carousel and cards into the main content
      */
     fineDinning.loadHomePage = function(){
-
+        
         activateTabAndDeactivateTheRest('at-home');
 
         var homeHTMLSnippet = "../fine-dinning/snippets/home-snippet.html";
@@ -105,6 +105,7 @@
         );
 
         var foodMenuDirectory = "../fine-dinning/resources/json/menu.json";
+        showLoading("#main-content");
         $ajaxUtils.sendGetRequest(foodMenuDirectory, 
             function(responseObjects){
                 renderFoodCardsForSchedule("breakfast", responseObjects);    
