@@ -107,12 +107,16 @@ a.btn-primary:focus, a.btn-primary.active:focus {
     box-shadow: 0 0 0 0.25rem rgba(128, 153, 113, 0.5);
   }
 
-.row div.card{
+#homeTiles .row div.card{
     margin-bottom: 20px;
     box-shadow: 0 0 25px #25371a;
     border: 2px solid #25371a;
     margin-left: auto;
     margin-right: auto;
+}
+
+#homeTiles .row div.card div.card-body h5{
+    color: #4A6D34;
 }
 
 .row div.card div.mapouter div.gmap_canvas iframe{
@@ -213,6 +217,10 @@ div#menu-content{
     box-shadow: 0 0 0 0.25rem rgb(166, 184, 156);
  }
 
+ h5.card-title{
+    color: #4A6D34;
+ }
+
 @media only screen and (max-width: 576px) {
     div#homeTiles{
         padding-left: 0;
@@ -220,7 +228,7 @@ div#menu-content{
         width: 97%;
     }
 
-    .row div.card{
+    #homeTiles.row div.card{
         margin-bottom: 20px;
         box-shadow: 0 0 12.5px #25371a;
         border: 1px solid #25371a;
@@ -247,6 +255,10 @@ div#menu-content{
     }
 
     div#about-content{
+        width: 92%;
+    }
+
+    div#menu-content{
         width: 92%;
     }
   }

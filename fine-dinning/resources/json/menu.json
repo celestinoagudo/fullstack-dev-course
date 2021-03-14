@@ -1,0 +1,63 @@
+{
+    "breakfast": [
+        {
+            "name": "Pan con Papas Fritas",
+            "description": "Freshly sliced baked bread stuffed with farm laid eggs comes with mixed Cheddar and Dairy Cream perfectly matched with Nutritious Fries will help you ease morning sickness.",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/egg sandwich with fries.jpg"
+        },
+        {
+            "name": "Longaniza con Arroz Fritos",
+            "description": "With just the aroma Angus Longaniza perfectly blended with seasoned Carbohydrate rich fried rice will let you have a reason to wake up every morning.",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/sausage and eggs.jpg"
+        },
+        {
+            "name": "Pasta with Angus Seasoned Sauce",
+            "description": "They say pasta themed foods improves life longetivity, why not consider our very own freshly seasoned Pasta comes with farm grown Angus Beef?",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/angussauce.jpg"
+        },
+        {
+            "name": "Egg with Bacon Sandwich",
+            "description": "The crisp bacon, hard-boiled eggs and crunchy green onions make these cozy sandwiches look impressive when company drops by for lunch. Best of all, they're a snap to assemble. ",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/egg with bacon sandwich.jpg"
+        },
+        {
+            "name": "Croissant",
+            "description": "Hot and fluffy homemade French croissant toast served with diced bacons is a great company to start your day with",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/croissant.jpg"
+        }
+    ],
+    "lunch": [
+        {
+            "name": "",
+            "description": "",
+            "directory": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "directory": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "directory": ""
+        }
+    ],
+    "dinner": [
+        {
+            "name": "",
+            "description": "",
+            "directory": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "directory": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "directory": ""
+        }
+    ]
+}
