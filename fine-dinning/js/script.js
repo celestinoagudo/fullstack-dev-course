@@ -104,17 +104,17 @@
             function(responseText){
 
                 insertHTML("#main-content",responseText);
+                var foodMenuDirectory = "../fine-dinning/resources/json/menu.json";
+
+                $ajaxUtils.sendGetRequest(foodMenuDirectory, 
+                    function(responseObjects){
+                        var breakfastFoodContents = renderFoodCardsForSchedule("breakfast", responseObjects);    
+                        insertHTML("#breakfastBody", breakfastFoodContents);
+                    },
+                    true
+                );
             },
             false
-        );
-
-        var foodMenuDirectory = "../fine-dinning/resources/json/menu.json";
-        $ajaxUtils.sendGetRequest(foodMenuDirectory, 
-            function(responseObjects){
-                var breakfastFoodContents = renderFoodCardsForSchedule("breakfast", responseObjects);    
-                insertHTML("#breakfastBody", breakfastFoodContents);
-            },
-            true
         );
     }
 
