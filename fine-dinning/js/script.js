@@ -16,7 +16,9 @@
     });
 })(window);
 
+
 (function(global){
+    // import * as restaurants from 'menu.js';
     //setup namespace for the project
     var fineDinning = {};
 
@@ -37,7 +39,9 @@
      */
     var insertHTML = function(selector, html){
         var targetElement = document.querySelector(selector);
-        targetElement.innerHTML = html;
+        if(targetElement !== null){
+            targetElement.innerHTML = html;
+        }
     }
 
     /**
@@ -105,10 +109,10 @@
         );
 
         var foodMenuDirectory = "../fine-dinning/resources/json/menu.json";
-        showLoading("#main-content");
         $ajaxUtils.sendGetRequest(foodMenuDirectory, 
             function(responseObjects){
-                renderFoodCardsForSchedule("breakfast", responseObjects);    
+                var breakfastFoodContents = renderFoodCardsForSchedule("breakfast", responseObjects);    
+                insertHTML("#breakfastBody", breakfastFoodContents);
             },
             true
         );
@@ -142,40 +146,20 @@
      */
     var renderFoodCardsForSchedule = function(schedule, responseObjects){
         var foodContents = "";
-        var selector = "";
-        var key = "";
 
-        switch(schedule){
-            case "breakfast" : {
-                key = "breakfast";
-                selector = "#breakfastBody"
-                break;
-            }
-            case "lunch" : {
-                key = "lunch";
-                selector = "#lunchBody";
-                break;
-            }
-            case "dinner" : {
-                key = "dinner";
-                selector = "#dinnerBody";
-                break;
-            }
-        }
-
-        for(var element in responseObjects[key]){
+        for(var element in responseObjects[schedule]){
 
             foodContents += "<div>"
             foodContents += "<div class=\"card h-100\">";
-            foodContents += "<img src=\"" + responseObjects[key][element].directory 
+            foodContents += "<img src=\"" + responseObjects[schedule][element].directory 
                                             +"\" class=\"card-img-top\" alt=\"...\">";
             foodContents += "<div class=\"card-body\">"
-            foodContents += "<h5 class=\"card-title\">" + responseObjects[key][element].name + "</h5>"
-            foodContents += "<p class=\"card-text\">" +  responseObjects[key][element].description + "</p>"
+            foodContents += "<h5 class=\"card-title\">" + responseObjects[schedule][element].name + "</h5>"
+            foodContents += "<p class=\"card-text\">" +  responseObjects[schedule][element].description + "</p>"
             foodContents += "</div></div></div>";
         }
 
-        insertHTML(selector, foodContents);
+        return foodContents;
     }
 
   // Expose utility to the global object
