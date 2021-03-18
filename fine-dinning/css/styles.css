@@ -189,6 +189,11 @@ div#menu-content{
     margin-bottom: 20px;
 }
 
+#about-content div.row img{
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+}
+
 
 .accordion-button:focus {
     z-index: 3;
@@ -219,6 +224,11 @@ div#menu-content{
 
  h5.card-title{
     color: #4A6D34;
+ }
+
+ div.accordion-body div div.card{
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
  }
 
 @media only screen and (max-width: 576px) {
