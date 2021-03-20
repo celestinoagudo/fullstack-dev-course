@@ -1,63 +1,192 @@
 {
     "breakfast": [
         {
-            "name": "Pan con Papas Fritas",
-            "description": "Freshly sliced baked bread stuffed with farm laid eggs comes with mixed Cheddar and Dairy Cream perfectly matched with Nutritious Fries will help you ease morning sickness.",
-            "directory": "../fine-dinning/resources/images/food-menu/breakfast/egg sandwich with fries.jpg"
+            "name": "Fruity Pancakes",
+            "description": "Surprise guests in the morning with a stack of these ultra-fluffy pancakes smothered in maple syrup.",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/fruity-pancakes.jpg",
+            "alt":"Fruity Pancakes"
         },
         {
-            "name": "Longaniza con Arroz Fritos",
-            "description": "With just the aroma Angus Longaniza perfectly blended with seasoned Carbohydrate rich fried rice will let you have a reason to wake up every morning.",
-            "directory": "../fine-dinning/resources/images/food-menu/breakfast/sausage and eggs.jpg"
+            "name": "Eggs Florentine",
+            "description": "A classic Eggs Florentine recipe made with poached eggs on a toasted english muffin with cooked spinach and and homemade hollandaise sauce.",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/eggs-florentine.jpg",
+            "alt":"Eggs Florentine"
         },
         {
-            "name": "Pasta with Angus Seasoned Sauce",
-            "description": "They say pasta themed foods improves life longetivity, why not consider our very own freshly seasoned Pasta comes with farm grown Angus Beef?",
-            "directory": "../fine-dinning/resources/images/food-menu/breakfast/angussauce.jpg"
+            "name": "Huevos Rancheros",
+            "description": "Huevos rancheros is an authentic Mexican breakfast recipe that’s hearty, rich in flavor, and a delicious way to start your morning. It’s prepared from a freshly fried tortilla topped with a sunny side up egg.",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/huevos-rancheros.jpg",
+            "alt":"Huevos Rancheros"
         },
         {
-            "name": "Egg with Bacon Sandwich",
-            "description": "The crisp bacon, hard-boiled eggs and crunchy green onions make these cozy sandwiches look impressive when company drops by for lunch. Best of all, they're a snap to assemble. ",
-            "directory": "../fine-dinning/resources/images/food-menu/breakfast/egg with bacon sandwich.jpg"
+            "name": "Machaca",
+            "description": "Mexican Shredded Beef (Machaca) is beef roast easily made in the crock pot or slow cooker with Mexican seasonings.",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/machaca.jpg",
+            "alt":"Machaca"
         },
         {
-            "name": "Croissant",
-            "description": "Hot and fluffy homemade French croissant toast served with diced bacons is a great company to start your day with",
-            "directory": "../fine-dinning/resources/images/food-menu/breakfast/croissant.jpg"
+            "name": "Carne Asada",
+            "description": "Carne Asada is tender, juicy skirt steak marinated in citrusy Mexican seasonings and grilled. Perfect for tacos and burritos, or on its own.",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/carne-asada.jpg",
+            "alt":"Carne Asada"
+        },
+        {
+            "name": "Pork Chop with Eggs",
+            "description": "These fried pork chops are dredged in seasoned flour, then deep fried until crispy and golden brown.",
+            "directory": "../fine-dinning/resources/images/food-menu/breakfast/pork-chops-with-eggs.jpg",
+            "alt":"Pork Chop with Eggs"
         }
     ],
     "lunch": [
         {
-            "name": "",
-            "description": "",
-            "directory": ""
+            "name": "Buffalo Chicken Wrap",
+            "description": "This favorite Buffalo Chicken Wrap includes juicy buffalo chicken layered on crunchy fresh veggies, topped with cheese and creamy dressing and wrapped tightly in a delicious flour tortilla.",
+            "directory": "../fine-dinning/resources/images/food-menu/lunch/buffalo-chicken-wrap.jpg",
+            "alt":"Buffalo Chicken Wrap"
         },
         {
-            "name": "",
-            "description": "",
-            "directory": ""
+            "name": "California Club Burger",
+            "description": "Whip up this California club burger with garlic and smokehouse black pepper, topped with cucumber, sprouts, avocado, bacon, and creamy ranch dressing.",
+            "directory": "../fine-dinning/resources/images/food-menu/lunch/california-club-burger.jpg",
+            "alt":"California Club Burger"
         },
         {
-            "name": "",
-            "description": "",
-            "directory": ""
+            "name": "Chicken Noodle Soup",
+            "description": "The Best Chicken Noodle Soup has thick chicken chunks, sliced carrots and celery, wide noodles soaking in a smooth chicken broth filled with flavorful seasonings and cooked to perfection.",
+            "directory": "../fine-dinning/resources/images/food-menu/lunch/chicken-noodle-soup.jpg",
+            "alt":"Chicken Noodle Soup"
+        },
+        {
+            "name": "Cobb Salad",
+            "description": "Classic American Cobb salad, a composed salad with bacon, avocado, chicken breast, tomato, hard boiled egg, chives, arranged on a bed of romaine, Boston, frisée lettuce and watercress.",
+            "directory": "../fine-dinning/resources/images/food-menu/lunch/cobb-salad.jpg",
+            "alt":"Cobb Salad"
+        },
+        {
+            "name": "Grilled Chicken Caesar",
+            "description": "Classic Caesar salad gets a flavor facelift thanks to the grill! Romaine hearts, rosemary marinated chicken and even the bread for the croutons are all grilled to perfection.",
+            "directory": "../fine-dinning/resources/images/food-menu/lunch/grilled-chicken-caesar.jpg",
+            "alt":"Grilled Chicken Caesar"
+        },
+        {
+            "name": "Mac and Cheese",
+            "description": "This macaroni and cheese is perfectly rich and creamy and it’s sure to be loved by people of all ages!",
+            "directory": "../fine-dinning/resources/images/food-menu/lunch/mac-and-cheese.jpg",
+            "alt":"Mac and Cheese"
+        },
+        {
+            "name": "Taco Salad",
+            "description": "Live every day like it’s Taco Tuesday with this delicious vegetarian Black Bean Taco Salad! It’s loaded with veggies and drizzled with a delicious homemade creamy salsa dressing.",
+            "directory": "../fine-dinning/resources/images/food-menu/lunch/taco-salad.jpg",
+            "alt":"Taco Salad"
         }
     ],
     "dinner": [
         {
-            "name": "",
-            "description": "",
-            "directory": ""
+            "name": "Buffalo Shrimp Skewers",
+            "description": "Shrimp is so versatile and is amazing with so many different types of seasoning. This variation using Buffalo wing sauce with homemade blue cheese is awesome. And grilling them puts them over the top.",
+            "directory": "../fine-dinning/resources/images/food-menu/dinner/buffalo-shrimp-skewers.jpg",
+            "alt":"Buffalo Shrimp Skewers"
         },
         {
-            "name": "",
-            "description": "",
-            "directory": ""
+            "name": "Sweet Potato Fries",
+            "description": "Crispy Garlic Sweet Potato Fries are thick cut sweet potatoes baked in olive oil and then seasoned with garlic powder and Italian seasoning for a crispy outside and a tender inside.",
+            "directory": "../fine-dinning/resources/images/food-menu/dinner/sweet-potato-fries.jpg",
+            "alt":"Sweet Potato Fries"
         },
         {
-            "name": "",
-            "description": "",
-            "directory": ""
+            "name": "Pulled Pork Nachos",
+            "description": "Pulled pork nachos are a delightfully messy pile of tasty flavors. Smoky pulled pork, tangy BBQ sauce, savory beans, and a creamy cheese sauce sit atop a mountain of crispy tortilla chips.",
+            "directory": "../fine-dinning/resources/images/food-menu/dinner/pulled-pork-nachos.jpg",
+            "alt":"Pulled Pork Nachos"
+        },
+        {
+            "name": "Whiskey Beef Ribs",
+            "description": "These melt in your mouth Irish whiskey braised short ribs are delicious served over a scoop of mashed potatoes slathered in a deep, rich sauce.",
+            "directory": "../fine-dinning/resources/images/food-menu/dinner/whiskey-beef-ribs.jpg",
+            "alt":"Whiskey Beef Ribs"
+        },
+        {
+            "name": "Sliced Brisket",
+            "description": "This smoked brisket is beef coated in a homemade spice rub, then slow smoked to tender perfection and thinly sliced.",
+            "directory": "../fine-dinning/resources/images/food-menu/dinner/sliced-brisket.jpg",
+            "alt":"Sliced Brisket"
+        },
+        {
+            "name": "Perfect Pork Tenderloin",
+            "description": "The perfect wow worthy meal for any night of the week. This flavor packed entree is guaranteed to satisfy even the pickiest of eaters.",
+            "directory": "../fine-dinning/resources/images/food-menu/dinner/sliced-pork-lion.jpg",
+            "alt":"Perfect Pork Tenderloin"
+        }
+    ],
+    "dessert": [
+        {
+            "name": "Mocha Mud Pie",
+            "description": "An Oreo cookie crust is topped with a mocha cheesecake and a chocolate pudding, all topped off with hot fudge and almonds for garnish. This is chocolate heaven!",
+            "directory": "../fine-dinning/resources/images/food-menu/dessert/mocha-mud-pie.jpg",
+            "alt":"Mocha Mud Pie"
+        },
+        {
+            "name": "Caramel Almond Poke Cake",
+            "description": "Treat your family with this nutty caramelised cake that’s made using Betty Crocker cake mix and vanilla frosting perfect dessert for a crowd.",
+            "directory": "../fine-dinning/resources/images/food-menu/dessert/tofee-poke-cake.jpg",
+            "alt":"Caramel Almond Poke Cake"
+        },
+        {
+            "name": "Apple Crisp",
+            "description": "Traditional Apple Crisp is always a favorite fall treat! Tender apples cooked to perfection with a sweet crumb topping. Don’t forget the ice cream!",
+            "directory": "../fine-dinning/resources/images/food-menu/dessert/apple-crisp.jpg",
+            "alt":"Apple Crisp"
+        },
+        {
+            "name": "Praline Cheesecake",
+            "description": "Try these praline cheesecake bars with toffee bits and a shortbread crust. They’re perfect on their own or with a scoop of ice cream drizzled with caramel.",
+            "directory": "../fine-dinning/resources/images/food-menu/dessert/praline-cheesecake.jpg",
+            "alt":"Praline Cheesecake"
+        },
+        {
+            "name": "Rockslide Pie",
+            "description": "Decadent homemade brownies with chocolate morsels and salted caramel tucked inside. Chiseled Salted Caramel ChocoRocks top off these Rockslide Brownies.",
+            "directory": "../fine-dinning/resources/images/food-menu/dessert/rock-slide-pie.jpg",
+            "alt":"Rockslide Pie"
+        }
+    ],
+    "drink": [
+        {
+            "name": "Nutella Coffee",
+            "description": "This combo was meant to be together! Homemade Nutella made from toasted hazelnuts and chocolate mixed with coffee is Heavenly!",
+            "directory": "../fine-dinning/resources/images/food-menu/drinks/nutella-coffee.jpg",
+            "alt":"Nutella Coffee"
+        },
+        {
+            "name": "Hot Chocolate",
+            "description": "The favorite homemade hot chocolate has the perfect amount of chocolate flavor, a delicious rich creaminess, and just the right sweetness.",
+            "directory": "../fine-dinning/resources/images/food-menu/drinks/hot-chocolate.jpg",
+            "alt":"Hot Chocolate"
+        },
+        {
+            "name": "Apple Juice",
+            "description": "Apple juice is very good for you! Apples are linked to lowering the risk of diabetes, weight loss, health benefits to you heart and some substances in apples may help prevent cancer.",
+            "directory": "../fine-dinning/resources/images/food-menu/drinks/apple-juice.jpg",
+            "alt":"Apple Juice"
+        },
+        {
+            "name": "Orange Juice",
+            "description": "Fresh squeezed orange juice is a wonderful treat. A far cry from what passes as orange juice at the grocery store, the real deal is incredibly fruity, sweet, and is loaded with Vitamin C.",
+            "directory": "../fine-dinning/resources/images/food-menu/drinks/fresh-orange-juice.jpg",
+            "alt":"Orange Juice"
+        },
+        {
+            "name": "Mango Lemonade",
+            "description": "Try this Mango Lemonade for a fruity, citrusy, and refreshing drink. Perfect for bringing you sunshine any time of the year! Made with sugar, water, lemon, and mangoes.",
+            "directory": "../fine-dinning/resources/images/food-menu/drinks/mango-lemonade.jpg",
+            "alt":"Mango Lemonade"
+        },
+        {
+            "name": "Manhattan Drink",
+            "description": "Made with Whiskey, Sweet Vermouth and Bitters, this classic Manhattan Drink is the ultimate libation for any Dinner or Cocktail Party! ",
+            "directory": "../fine-dinning/resources/images/food-menu/drinks/manhattan-drink.jpg",
+            "alt":"Rockslide Pie"
         }
     ]
 }

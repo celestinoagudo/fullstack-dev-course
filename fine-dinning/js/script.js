@@ -1,8 +1,8 @@
+/**
+ * Utility method to collapse the navigation menu when the user clicks 
+ * anywhere outside the toggler button
+ */
 (function (global){
-    /**
-     * Utility method to collapse the navigation menu when the user clicks 
-     * anywhere outside the toggler button 
-     */
     var myNavBarToggler = document.getElementById('navBarToggler');
     myNavBarToggler.addEventListener('blur', function(event){
 
@@ -18,7 +18,6 @@
 
 
 (function(global){
-    // import * as restaurants from 'menu.js';
     //setup namespace for the project
     var fineDinning = {};
 
@@ -108,8 +107,41 @@
 
                 $ajaxUtils.sendGetRequest(foodMenuDirectory, 
                     function(responseObjects){
-                        var breakfastFoodContents = renderFoodCardsForSchedule("breakfast", responseObjects);    
+                        var breakfastFoodContents = renderFoodCardsForSchedule("breakfast", 
+                                                        responseObjects);    
                         insertHTML("#breakfastBody", breakfastFoodContents);
+                    },
+                    true
+                );
+                $ajaxUtils.sendGetRequest(foodMenuDirectory, 
+                    function(responseObjects){
+                        var lunchFoodContents = renderFoodCardsForSchedule("lunch", 
+                                                    responseObjects);    
+                        insertHTML("#lunchBody", lunchFoodContents);
+                    },
+                    true
+                );
+                $ajaxUtils.sendGetRequest(foodMenuDirectory, 
+                    function(responseObjects){
+                        var dinnerFoodContents = renderFoodCardsForSchedule("dinner", 
+                                                    responseObjects);    
+                        insertHTML("#dinnerBody", dinnerFoodContents);
+                    },
+                    true
+                );
+                $ajaxUtils.sendGetRequest(foodMenuDirectory, 
+                    function(responseObjects){
+                        var dessertFoodContents = renderFoodCardsForSchedule("dessert", 
+                                                    responseObjects);    
+                        insertHTML("#dessertBody", dessertFoodContents);
+                    },
+                    true
+                );
+                $ajaxUtils.sendGetRequest(foodMenuDirectory, 
+                    function(responseObjects){
+                        var drinkFoodContents = renderFoodCardsForSchedule("drink", 
+                                                    responseObjects);    
+                        insertHTML("#drinkBody", drinkFoodContents);
                     },
                     true
                 );
@@ -152,7 +184,8 @@
             foodContents += "<div>"
             foodContents += "<div class=\"card h-100\">";
             foodContents += "<img src=\"" + responseObjects[schedule][element].directory 
-                                            +"\" class=\"card-img-top\" alt=\"...\">";
+                                            +"\" class=\"card-img-top\" alt=\""
+                                            + responseObjects[schedule][element].alt +"\">";
             foodContents += "<div class=\"card-body\">"
             foodContents += "<h5 class=\"card-title\">" + responseObjects[schedule][element].name + "</h5>"
             foodContents += "<p class=\"card-text\">" +  responseObjects[schedule][element].description + "</p>"
