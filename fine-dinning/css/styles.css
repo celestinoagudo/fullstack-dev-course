@@ -62,13 +62,18 @@ body{
     padding-left: 10%;
 }
 
-footer.panel-footer {
+.footer {
     width: 100%;
-    bottom: 0px;
     height: 40px;
     background-color: #454545;
     color: #fff;
-    bottom: 0px;
+    bottom: 0;
+    /* position: absolute; */
+}
+
+.footer p {
+   padding-top: 10px;
+   font-size: 13px;
 }
 
 div#homePageCarousel{
@@ -141,6 +146,18 @@ a.btn-primary:focus, a.btn-primary.active:focus {
 .panel-footer div{
     font-size: 13px;
     padding-top: 10px;
+}
+
+header{
+    min-height: 10vh;
+}
+
+div#main-content{
+    min-height: 85vh; 
+}
+
+footer {
+    min-height: 5vh;
 }
 
 
