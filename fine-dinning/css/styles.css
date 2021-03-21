@@ -1,6 +1,7 @@
 /*  Default Page Components and Home Page Styles */
 body{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     background-color: #4A6D34;
     height: 100%;
@@ -94,6 +95,22 @@ div#homeTiles{
     margin-right: auto;
 }
 
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:66.5%;
+    position:relative;
+    height:0;
+
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 a.btn-primary{
     background-color: #4A6D34;
     border-color: #4A6D34;
@@ -177,8 +194,16 @@ div#about-content{
     margin-bottom: 20px;
 }
 
-div#about-content h1, div#menu-content h2, div#about-content h2,  div#about-content div.row div p, div#about-content hr{
+span#date-origin, span#origin-owner, span#restaurant-name{
+	color: #4A6D34;
+}  
+
+div#about-content h1,div#specials-content h2, div#menu-content h2, div#about-content h2, div#about-content hr{
     color: #4A6D34;
+}
+
+div#about-content div.row div p{
+    line-height: 28px;
 }
 
 div#about-content div.row div p{
@@ -200,7 +225,7 @@ div#about-content div.row{
     margin-bottom: 3%;
 }
 
-div#menu-content{
+div#menu-content, div#specials-content{
     margin-top: 20px;
     width: 80%;
     height: 100%;
@@ -219,13 +244,6 @@ div#menu-content{
     box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
     -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
 }
-
-/* div#lunchBody{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1px;
-} */
-
 
 .accordion-button:focus {
     z-index: 3;
@@ -254,6 +272,10 @@ div#menu-content{
     box-shadow: 0 0 0 0.25rem rgb(166, 184, 156);
  }
 
+ div.accordion-item:last-child{
+    margin-bottom: 8px;
+}
+
  h5.card-title{
     color: #4A6D34;
  }
@@ -262,6 +284,18 @@ div#menu-content{
     box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
     -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
  }
+
+ div#specials-content div.card{
+     width: 95%;
+     margin-left: auto;
+     margin-right: auto;
+     box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+     -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+ }
+
+div#specialsBody{
+    margin-bottom: 15px;
+}
 
 @media only screen and (max-width: 576px) {
     div#homeTiles{
