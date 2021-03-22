@@ -385,6 +385,9 @@ div#specialsBody {
     div#specials-content {
         width: 92%;
     }
+    div#news-content {
+        width: 92%;
+    }
 }
 
 @media only screen and (max-width: 991px) {
