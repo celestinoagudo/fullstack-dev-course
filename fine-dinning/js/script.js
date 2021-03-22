@@ -155,7 +155,7 @@
                             "lunch": [],
                             "dinner": [],
                             "dessert": [],
-                            "drink": [],
+                            "drink": []
                         };
 
                         for (var element in responseObjects) {
@@ -181,8 +181,24 @@
             },
             false
         );
-
     }
+    
+    /*
+    * Utility method to load the about contents into the main content
+    */
+   fineDinning.loadNewsPage = function () {
+
+       activateTabAndDeactivateTheRest('at-news');
+
+       var newsHTMLSnippet = "../fine-dinning/snippets/news-snippet.html";
+       $ajaxUtils.sendGetRequest(newsHTMLSnippet,
+           function (responseText) {
+               // document.querySelector("#main-content").innerHTML = responseText;
+               insertHTML("#main-content", responseText);
+           },
+           false
+       );
+   };
 
     /**
      * utility method to activate new tab and deactivate the rest
