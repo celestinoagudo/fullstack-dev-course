@@ -38,7 +38,6 @@ body {
     width: 42%;
 }
 
-
 .navbar-nav li {
     display: block;
     text-align: center;
@@ -183,7 +182,7 @@ footer {
 
 
 /* About Page Styles */
-div#about-content {
+/* div#about-content {
     margin-top: 20px;
     width: 80%;
     height: 100%;
@@ -196,7 +195,7 @@ div#about-content {
     border: 2px solid #2c411f;
     border-radius: 6px;
     margin-bottom: 20px;
-}
+} */
 
 span#date-origin,
 span#origin-owner,
@@ -210,7 +209,9 @@ div#about-content h2,
 div#news-content h2,
 div#news-content h5,
 div#about-content hr,
-div#news-content hr {
+div#news-content hr,
+div#contacts-content h2,
+div#contacts-content hr {
     color: #4A6D34;
 }
 
@@ -218,6 +219,7 @@ div#news-content h5.card-header,
 div#news-content h2,
 div#about-content h2,
 div#specials-content h2,
+div#contacts-content h2,
 div#menu-content h2 {
     font-weight: bolder;
 }
@@ -226,6 +228,7 @@ div#news-content h5 {
     background-color: #fff;
 }
 
+div#contacts-content h2,
 div#news-content h2,
 div#about-content h2,
 div#specials-content h2,
@@ -270,9 +273,11 @@ div#about-content div.row {
     margin-bottom: 3%;
 }
 
+div#about-content,
 div#menu-content,
 div#specials-content,
-div#news-content {
+div#news-content,
+div#contacts-content {
     margin-top: 20px;
     width: 80%;
     height: 100%;
@@ -345,6 +350,14 @@ div#specialsBody {
     margin-bottom: 15px;
 }
 
+div.input-group{
+    margin-bottom: 10px;
+}
+
+div.d-grid button:nth-child(1){
+    margin-right: 5px;
+}
+
 @media only screen and (max-width: 576px) {
     div#homeTiles {
         padding-left: 0;
@@ -402,6 +415,10 @@ div#specialsBody {
     }
 
     div#news-content {
+        width: 92%;
+    }
+
+    div#contacts-content {
         width: 92%;
     }
 }

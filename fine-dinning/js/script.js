@@ -182,23 +182,40 @@
             false
         );
     }
-    
+
     /*
-    * Utility method to load the about contents into the main content
-    */
-   fineDinning.loadNewsPage = function () {
+     * Utility method to load the about contents into the main content
+     */
+    fineDinning.loadNewsPage = function () {
 
-       activateTabAndDeactivateTheRest('at-news');
+        activateTabAndDeactivateTheRest('at-news');
 
-       var newsHTMLSnippet = "../fine-dinning/snippets/news-snippet.html";
-       $ajaxUtils.sendGetRequest(newsHTMLSnippet,
-           function (responseText) {
-               // document.querySelector("#main-content").innerHTML = responseText;
-               insertHTML("#main-content", responseText);
-           },
-           false
-       );
-   };
+        var newsHTMLSnippet = "../fine-dinning/snippets/news-snippet.html";
+        $ajaxUtils.sendGetRequest(newsHTMLSnippet,
+            function (responseText) {
+                // document.querySelector("#main-content").innerHTML = responseText;
+                insertHTML("#main-content", responseText);
+            },
+            false
+        );
+    };
+
+    /*
+     * Utility method to load the about contents into the main content
+     */
+    fineDinning.loadContactsPage = function () {
+
+        activateTabAndDeactivateTheRest('at-contacts');
+
+        var contactsHTMLSnippet = "../fine-dinning/snippets/contacts-snippet.html";
+        $ajaxUtils.sendGetRequest(contactsHTMLSnippet,
+            function (responseText) {
+                // document.querySelector("#main-content").innerHTML = responseText;
+                insertHTML("#main-content", responseText);
+            },
+            false
+        );
+    };
 
     /**
      * utility method to activate new tab and deactivate the rest
