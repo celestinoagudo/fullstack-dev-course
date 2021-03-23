@@ -222,6 +222,10 @@ div#menu-content h2 {
     font-weight: bolder;
 }
 
+div#news-content h5 {
+    background-color: #fff;
+}
+
 div#news-content h2,
 div#about-content h2,
 div#specials-content h2,
@@ -378,6 +382,17 @@ div#specialsBody {
         width: 92%;
     }
 
+    div#about-content div.row div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+
+    div#about-content div.row div p {
+        padding-right: 0;
+    }
+
     div#menu-content {
         width: 92%;
     }
@@ -385,6 +400,7 @@ div#specialsBody {
     div#specials-content {
         width: 92%;
     }
+
     div#news-content {
         width: 92%;
     }
@@ -402,9 +418,17 @@ div#specialsBody {
         width: 100%;
     }
 
+    div#about-content div.row div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+
     div#about-content div.row div p {
         padding-top: 10px;
         padding-left: 0;
+        padding-right: 0;
     }
 
     div#about-content div.row div img {
