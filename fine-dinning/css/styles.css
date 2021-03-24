@@ -215,6 +215,10 @@ div#contacts-content hr {
     color: #4A6D34;
 }
 
+div#contacts-content hr{
+    margin-bottom: 2.5%;
+}
+
 div#news-content h5.card-header,
 div#news-content h2,
 div#about-content h2,
@@ -350,12 +354,48 @@ div#specialsBody {
     margin-bottom: 15px;
 }
 
-div.input-group{
+div.input-group {
     margin-bottom: 10px;
 }
 
-div.d-grid button:nth-child(1){
+div.d-grid button:nth-child(1) {
     margin-right: 5px;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #6c895a;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(166, 184, 156);
+}
+
+.form-select:focus {
+    border-color: #6c895a;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(166, 184, 156);
+}
+
+button#submit-button,
+button#clear-button {
+    color: #fff;
+    background-color: #6c895a;
+    border-color: #6c895a;
+}
+
+button#submit-button:focus,
+button#clear-button:focus,
+button#submit-button:hover,
+button#clear-button:hover {
+    border-color: #6c895a;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(166, 184, 156);
+}
+div.input-group{
+    margin-bottom: 4%;
+}
+div.d-grid {
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -451,6 +491,10 @@ div.d-grid button:nth-child(1){
     div#about-content div.row div img {
         margin-left: 0;
 
+    }
+
+    div.d-grid button:nth-child(1) {
+        margin-right: 0;
     }
 }
 

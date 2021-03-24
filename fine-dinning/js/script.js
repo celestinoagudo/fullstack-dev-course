@@ -217,6 +217,17 @@
         );
     };
 
+    fineDinning.clearInputFields = function () {
+
+        document.getElementById('subjectSelect').selectedIndex = 0;
+
+        var elements = document.getElementsByClassName('form-control');
+        for (var index in elements) {
+            elements[index].value = "";
+        }
+
+    }
+
     /**
      * utility method to activate new tab and deactivate the rest
      * 
