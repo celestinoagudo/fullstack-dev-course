@@ -218,7 +218,7 @@
     };
 
     /**
-     * Utilith method to clear input fields upon clear button selection
+     * utility method to clear input fields upon clear button selection
      */
     fineDinning.clearInputFields = function () {
 
@@ -231,6 +231,9 @@
 
     }
 
+    /**
+     * utility method to submit inputs.
+     */
     fineDinning.submitInputs = function () {
 
         if (inputsAreValid()) {
@@ -240,17 +243,19 @@
         }
     }
 
+    /**
+     * utility method to determine whether user inputs are valid
+     * @returns true or false
+     */
     function inputsAreValid() {
         var availableOptions = document.getElementById('subjectSelect');
         var selected = availableOptions.options[availableOptions.value];
 
         var nameInput = document.getElementById('name-text-field').value;
         var emailInput = document.getElementById('email-text-field').value;
-        var addressInput = document.getElementById('address-text-field').value;
         var contactsInput = document.getElementById('contacts-text-field').value;
-        var messageInput = document.getElementById('message-text-area').value;
 
-        if (selected === undefined || selected === null) {
+        if (!selected) {
             alert('Kindly Provide a Subject for your Message');
             return false;
         } else if (!nameInput) {
